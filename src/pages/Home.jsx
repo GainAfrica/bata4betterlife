@@ -6,6 +6,9 @@ const Home = () => {
   return (
     <div className="homepage">
       <Header />
+
+      <div className="impact-numbers"></div>
+
       <Footer />
     </div>
   );
