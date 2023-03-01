@@ -1,14 +1,17 @@
 import React from "react";
+import About from "../components/About";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Impact from "../components/Impact";
+import Volunteer from "../components/Volunteer";
 
 const Home = () => {
   return (
     <div className="homepage">
       <Header />
-
-      <div className="impact-numbers"></div>
-
+      <About />
+      <Impact />
+      <Volunteer />
       <Footer />
     </div>
   );
