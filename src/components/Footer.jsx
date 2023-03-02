@@ -3,6 +3,12 @@ import Logo from "../assets/svgs/footer-logo.svg";
 import Rectangle from "../assets/svgs/footer-rectangle.svg";
 import { Link } from "react-router-dom";
 import Heart from "../assets/svgs/heart.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -20,8 +26,22 @@ const Footer = () => {
 
           <div className="footer__address">
             <span className="footer__rectangles-container">
-              <img src={Rectangle} className="footer__rectangle" alt="" />
-              <img src={Rectangle} className="footer__rectangle" alt="" />
+              <Link
+                to={"/"}
+                href="https://www.linkedin.com/in/moyinoluwa-adelowo-675565239/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} className="footer__icons" />
+              </Link>
+              <Link
+                to={"/"}
+                href="https://twitter.com/rotii_mii"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faTwitter} className="footer__icons" />
+              </Link>
             </span>
             <p className="footer__address-details">
               1, New Airport Area, Oshodi, Nigeria
