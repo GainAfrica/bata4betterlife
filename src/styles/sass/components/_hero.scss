@@ -1,0 +1,23 @@
+.hero {
+  background: url(../../assets/images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh + 10px);
+  position: relative;
+  z-index: 1;
+  color: $color-white;
+  padding: 24rem 5rem 6rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__arrow {
+    cursor: pointer;
+  }
+}

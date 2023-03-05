@@ -59,6 +59,16 @@ body {
   }
 }
 
+.hero {
+  &__paragraph {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
 .general-form {
   &__title {
     font-size: 4.8rem;

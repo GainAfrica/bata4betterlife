@@ -1,26 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Arrow from "../assets/icons/arrow-down.svg";
 import Beach from "../assets/images/about__beach.png";
 import KidGroup from "../assets/images/about__kids.png";
 
 const About = () => {
+  const [diffX, setdiffX] = useState("");
+  const [diffY, setdiffY] = useState("");
+  const [left, setLeft] = useState(500);
+  const [top, setTop] = useState(1000);
+  const [isDragging, setIsDragging] = useState(false);
+
+  const dragStart = function (e) {
+    setdiffX(e.clientX - e.currentTarget.getBoundingClientRect().left);
+    setdiffY(e.clientY - e.currentTarget.getBoundingClientRect().top);
+    setIsDragging(true);
+  };
+
+  const dragging = function (e) {
+    if (isDragging) {
+      setLeft(e.pageX - diffX);
+      setTop(e.pageY - diffY);
+    }
+  };
+
+  const dragEnd = function () {
+    setIsDragging(false);
+  };
+
+  const dragEnd2 = function () {
+    if (isDragging) {
+      setIsDragging(false);
+    }
+  };
   return (
     <div className="about">
-      {/* <div className="about__container--1">
-        <h1 className="heading-primary u-center-text u-margin-bottom-medium">
-          Small changes make a big impact on life
-        </h1>
-
-        <p className="paragraph__about--1 u-center-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-
-        <div className="about__arrow">
-          <img src={Arrow} alt="arrow" className="arrow" />
-        </div>
-      </div>
-
       <div className="about__container--2">
         <div className="about__container--2__left">
           <p className="paragraph__about--2">
@@ -41,7 +54,7 @@ const About = () => {
             goals.
           </p>
         </div>
-      </div> */}
+      </div>
 
       <div className="about__container--3">
         <div className="about__container--3__left">
@@ -49,7 +62,17 @@ const About = () => {
             <img src={Beach} alt="" />
             <p>visitation to the beach</p>
           </div>
-          <div className="about__container--3__left__btn"> Next </div>
+          <div
+            className="about__container--3__left__btn"
+            onMouseDown={dragStart}
+            onMouseMove={dragging}
+            onMouseUp={dragEnd}
+            onMouseOut={dragEnd2}
+            style={{ left: left, top: top }}
+          >
+            {" "}
+            Next{" "}
+          </div>
         </div>
         <div className="about__container--3__right">
           <div className="about__container--3__right__kidGroup">

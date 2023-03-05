@@ -2,6 +2,7 @@ import React from "react";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 import Impact from "../components/Impact";
 import Volunteer from "../components/Volunteer";
 
@@ -9,6 +10,7 @@ const Home = () => {
   return (
     <div data-scroll-section className="homepage">
       <Header />
+      <Hero />
       <About />
       <Impact />
       <Volunteer />

@@ -71,8 +71,17 @@ const VolunteerForm = () => {
 
   return (
     <div className="general-form">
-      <div className="general-form__container">
-        <div className="general-form__box">
+      <div
+        className="general-form__container"
+        data-scroll-container
+        id="scroll-container"
+      >
+        <div
+          className="general-form__box"
+          data-scroll
+          data-scroll-sticky
+          data-scroll-target="#scroll-container"
+        >
           <div className="general-form__box-back">
             <Link to={"/"}>
               <img src={LeftArrow} alt="left-arrow" /> <p>Back</p>
