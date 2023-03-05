@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer data-scroll-section className="footer">
       {/* START OF LEFT SIDE OF FOOTER */}
       <div className="footer__left">
         <div className="footer__left__top">
