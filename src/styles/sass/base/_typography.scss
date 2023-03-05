@@ -4,6 +4,12 @@
     format("opentype");
 }
 
+@font-face {
+  font-family: "GeneralSansDark";
+  src: url(../../assets/fonts/generalsans/Fonts/OTF/GeneralSans-Bold.otf)
+    format("opentype");
+}
+
 body {
   font-family: "GeneralSans", sans-serif;
   font-weight: 400;
