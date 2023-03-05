@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "GeneralSans";
+  font-family: "General Sans";
   src: url(../../assets/fonts/generalsans/Fonts/OTF/GeneralSans-Regular.otf)
     format("opentype");
 }
 
 @font-face {
-  font-family: "GeneralSansDark";
+  font-family: "General Sans Dark";
   src: url(../../assets/fonts/generalsans/Fonts/OTF/GeneralSans-Bold.otf)
     format("opentype");
 }
 
 @font-face {
-  font-family: "GeneralSansSemi";
+  font-family: "General Sans Semi";
   src: url(../../assets/fonts/generalsans/Fonts/OTF/GeneralSans-Semibold.otf)
     format("opentype");
 }
 
 body {
-  font-family: "GeneralSans", sans-serif;
+  font-family: "General Sans", sans-serif;
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.7;
@@ -37,22 +37,14 @@ body {
   line-height: 60px;
 }
 
-.paragraph {
-  &__about--1 {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    width: 500px;
-    margin: 0 auto;
-  }
-
-  &__about--2 {
+.about {
+  &__paragraph--1 {
     font-size: 28px;
     font-weight: 500;
     line-height: 38px;
   }
 
-  &__about--3 {
+  &__paragraph--2 {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -75,7 +67,7 @@ body {
     font-weight: 700;
     line-height: 6.5rem;
     max-width: 45rem;
-    font-family: "GeneralSansDark", sans-serif;
+    font-family: "General Sans Dark", sans-serif;
   }
 
   &__paragraph {

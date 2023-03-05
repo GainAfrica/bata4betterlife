@@ -88,19 +88,19 @@ html.has-scroll-dragging {
   bottom: 0; }
 
 @font-face {
-  font-family: "GeneralSans";
+  font-family: "General Sans";
   src: url(../../assets/fonts/generalsans/Fonts/OTF/GeneralSans-Regular.otf) format("opentype"); }
 
 @font-face {
-  font-family: "GeneralSansDark";
+  font-family: "General Sans Dark";
   src: url(../../assets/fonts/generalsans/Fonts/OTF/GeneralSans-Bold.otf) format("opentype"); }
 
 @font-face {
-  font-family: "GeneralSansSemi";
+  font-family: "General Sans Semi";
   src: url(../../assets/fonts/generalsans/Fonts/OTF/GeneralSans-Semibold.otf) format("opentype"); }
 
 body {
-  font-family: "GeneralSans", sans-serif;
+  font-family: "General Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7; }
@@ -117,19 +117,12 @@ body {
   font-weight: 600;
   line-height: 60px; }
 
-.paragraph__about--1 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  width: 500px;
-  margin: 0 auto; }
-
-.paragraph__about--2 {
+.about__paragraph--1 {
   font-size: 28px;
   font-weight: 500;
   line-height: 38px; }
 
-.paragraph__about--3 {
+.about__paragraph--2 {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px; }
@@ -146,7 +139,7 @@ body {
   font-weight: 700;
   line-height: 6.5rem;
   max-width: 45rem;
-  font-family: "GeneralSansDark", sans-serif; }
+  font-family: "General Sans Dark", sans-serif; }
 
 .general-form__paragraph {
   font-size: 1.6rem;
@@ -174,43 +167,40 @@ body {
 
 .about {
   width: 100%;
+  padding: 10rem 5rem;
   position: relative;
+  margin-top: -10px;
   z-index: 3;
   border-radius: 1.6rem 1.6rem 0 0;
   background-color: #fff;
-  margin-top: -10px;
+  color: #000;
   overflow: hidden; }
-  .about__container--2 {
-    background-color: #fff;
-    color: #000;
-    padding: 10rem 5rem;
+  .about__container--1 {
     display: flex;
-    justify-content: space-between;
-    width: 100%; }
-    .about__container--2__left {
+    justify-content: space-between; }
+    .about__container--1__left {
       max-width: 43rem; }
-    .about__container--2__right {
+    .about__container--1__right {
       max-width: 66rem; }
-  .about__container--3 {
-    color: #000;
-    padding: 10rem 5rem;
+  .about__container--2 {
+    padding: 10rem 0rem;
     display: flex;
-    justify-content: space-between;
-    width: 100%; }
-    .about__container--3__left {
+    justify-content: space-between; }
+    .about__container--2__left {
       position: relative;
       display: flex;
       flex-direction: column;
       min-width: 48rem; }
-      .about__container--3__left__beach {
+      .about__container--2__left__beach {
         max-width: 43rem;
         max-height: 32rem;
         font-style: italic;
         font-weight: 400;
         align-self: flex-start; }
-        .about__container--3__left__beach img {
-          width: 100%; }
-      .about__container--3__left__btn {
+        .about__container--2__left__beach img {
+          width: 100%;
+          height: 100%; }
+      .about__container--2__left__btn {
         position: absolute;
         z-index: 1000;
         border-radius: 50%;
@@ -221,16 +211,18 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: move; }
-    .about__container--3__right {
+        cursor: move;
+        left: 500px;
+        top: 500px; }
+    .about__container--2__right {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .about__container--3__right__kidGroup {
+      .about__container--2__right__kidGroup {
         max-width: 66rem;
         font-style: italic;
         font-weight: 400; }
-        .about__container--3__right__kidGroup img {
+        .about__container--2__right__kidGroup img {
           width: 100%;
           height: 100%; }
 
@@ -336,6 +328,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  min-height: 70rem;
   height: calc(100vh + 10px);
   position: relative;
   z-index: 1;
