@@ -4,7 +4,7 @@ import Rarrow from "../assets/images/right-arrow.svg";
 
 function Volunteer() {
   return (
-    <section data-scroll-section className="volunteer">
+    <section className="volunteer">
       <div className="volunteer__container">
         <div className="volunteer__box">
           <p className="volunteer__para">Become a part of our mission</p>

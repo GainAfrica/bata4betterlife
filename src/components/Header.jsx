@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header data-scroll-section className="header">
+    <header className="header">
       <div className="header__logo-box">
         <img src={Logo} alt="Logo" className="header__logo" />
       </div>

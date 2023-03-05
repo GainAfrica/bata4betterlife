@@ -5,7 +5,7 @@ import KidGroup from "../assets/images/about__kids.png";
 
 const About = () => {
   return (
-    <div data-scroll-section className="about">
+    <div className="about">
       {/* <div className="about__container--1">
         <h1 className="heading-primary u-center-text u-margin-bottom-medium">
           Small changes make a big impact on life

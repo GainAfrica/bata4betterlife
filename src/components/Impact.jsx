@@ -3,7 +3,7 @@ import Keke from "../assets/images/keke-bg.png";
 
 function Impact() {
   return (
-    <section data-scroll-section className="impact">
+    <section className="impact">
       <div className="impact__container">
         {/* <img className="impact__container__bg" src={Keke} alt="" /> */}
         <p className="impact__para">
