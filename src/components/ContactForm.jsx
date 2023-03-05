@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LeftArrow from "../assets/icons/arrow-left.svg";
 
-const VolunteerForm = () => {
+const ContactForm = () => {
   return (
     <div className="general-form">
       <div className="general-form__container">
@@ -13,9 +13,9 @@ const VolunteerForm = () => {
             </Link>
           </div>
           <div>
-            <p className="general-form__paragraph">Become a volunteer</p>
+            <p className="general-form__paragraph">Get in touch</p>
             <h3 className="general-form__title">
-              Interested in participating as a volunteer?
+              Interested in connecting with us at Bata4betterlife?
             </h3>
           </div>
         </div>
@@ -57,30 +57,19 @@ const VolunteerForm = () => {
             />
           </div>
           <div className="general-form__form-group">
-            <label htmlFor="skills" className="general-form__form-label">
-              Skills
+            <label htmlFor="message" className="general-form__form-label">
+              Message
             </label>
-            <input
-              type="text"
-              name="skills"
-              id="skills"
-              className="general-form__form-input"
-              placeholder="Ex - First aid, Teaching, Financial aid "
-            />
+            <textarea
+              name="message"
+              id="message"
+              className="general-form__form-textarea"
+              cols="30"
+              rows="5"
+              placeholder="Enter your message"
+            ></textarea>
           </div>
 
-          <div className="general-form__form-group">
-            <label htmlFor="interest" className="general-form__form-label">
-              How will you like to be involved?
-            </label>
-            <input
-              type="text"
-              name="interest"
-              id="interest"
-              className="general-form__form-input"
-              placeholder="Enter your area of interest"
-            />
-          </div>
           <div>
             <button className="general-form__form-btn">Submit form</button>
           </div>
@@ -90,4 +79,4 @@ const VolunteerForm = () => {
   );
 };
 
-export default VolunteerForm;
+export default ContactForm;

@@ -10,6 +10,12 @@
     format("opentype");
 }
 
+@font-face {
+  font-family: "GeneralSansSemi";
+  src: url(../../assets/fonts/generalsans/Fonts/OTF/GeneralSans-Semibold.otf)
+    format("opentype");
+}
+
 body {
   font-family: "GeneralSans", sans-serif;
   font-weight: 400;
@@ -50,5 +56,22 @@ body {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+  }
+}
+
+.general-form {
+  &__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6.5rem;
+    max-width: 45rem;
+    font-family: "GeneralSansDark", sans-serif;
+  }
+
+  &__paragraph {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    margin-bottom: 10px;
   }
 }
