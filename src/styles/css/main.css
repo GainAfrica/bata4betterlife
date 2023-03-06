@@ -13,7 +13,12 @@ body {
   box-sizing: border-box; }
 
 html.has-scroll-smooth {
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 html.has-scroll-dragging {
   -webkit-user-select: none;
@@ -328,12 +333,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 70rem;
+  min-height: 60rem;
   height: calc(100vh + 10px);
   position: relative;
   z-index: 1;
   color: #fff;
-  padding: 24rem 5rem 6rem; }
+  padding: 11% 5rem 6rem; }
   .hero__container {
     display: flex;
     flex-direction: column;

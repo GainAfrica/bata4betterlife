@@ -28,8 +28,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/volunteer" element={<Volunteer />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/volunteer" element={<Volunteer />} />
         </Routes>
       </main>
     </LocomotiveScrollProvider>

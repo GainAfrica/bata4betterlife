@@ -3,12 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 70rem;
+  min-height: 60rem;
   height: calc(100vh + 10px);
   position: relative;
   z-index: 1;
   color: $color-white;
-  padding: 24rem 5rem 6rem;
+  padding: 11% 5rem 6rem;
 
   &__container {
     display: flex;

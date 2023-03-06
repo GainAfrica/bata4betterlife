@@ -74,13 +74,13 @@ const VolunteerForm = () => {
       <div
         className="general-form__container"
         data-scroll-container
-        id="scroll-container"
+        id="scroll-cont"
       >
         <div
           className="general-form__box"
           data-scroll
           data-scroll-sticky
-          data-scroll-target="#scroll-container"
+          data-scroll-target="#scroll-cont"
         >
           <div className="general-form__box-back">
             <Link to={"/"}>
