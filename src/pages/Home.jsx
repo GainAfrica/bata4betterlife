@@ -9,8 +9,8 @@ import Volunteer from "../components/Volunteer";
 const Home = () => {
   return (
     <div data-scroll-section className="homepage">
-      {/* <Header /> */}
-      {/* <Hero /> */}
+      <Header />
+      <Hero />
       <About />
       <Impact />
       <Volunteer />
