@@ -19,12 +19,14 @@ function Impact() {
         >
           <div className="impact__stats">
             <div className="impact__stats__numbers">
-              <h2>{<CountUp start={0} end={23} duration={2} />}</h2>
+              <h2>
+                {counterOn && <CountUp start={0} end={23} duration={2} />}
+              </h2>
               <p>Lives touched over time</p>
             </div>
             <div className="impact__stats__numbers">
               <h2>
-                {
+                {counterOn && (
                   <CountUp
                     start={0}
                     end={1.5}
@@ -33,12 +35,14 @@ function Impact() {
                     prefix={"₦"}
                     suffix={"M"}
                   />
-                }
+                )}
               </h2>
               <p>Donations received over time</p>
             </div>
             <div className="impact__stats__numbers">
-              <h2>{<CountUp start={0} end={23} duration={2} />}</h2>
+              <h2>
+                {counterOn && <CountUp start={0} end={23} duration={2} />}
+              </h2>
               <p>Lives touched over time</p>
             </div>
           </div>
