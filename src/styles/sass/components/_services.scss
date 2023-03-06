@@ -1,0 +1,89 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-blue;
+  padding: 10rem 5rem;
+  margin-inline: auto;
+  border-radius: 1.6rem 1.6rem 0 0;
+  position: relative;
+
+  hr {
+    margin: 3rem 0;
+    background-color: $color-gray;
+    height: 2px;
+    border: none;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120rem;
+    align-self: center;
+    width: 100%;
+
+    h3 {
+      font-size: 4.8rem;
+      font-weight: 900;
+      max-width: 54rem;
+    }
+
+    p {
+      font-weight: 900;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    max-width: 130rem;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+
+    // STYLING LEFT SIDE OF BOX
+    &-left {
+      display: flex;
+      margin-right: 10rem;
+    }
+
+    &-number {
+      margin-right: 8rem;
+      font-weight: 700;
+    }
+
+    &-image-container {
+      max-width: 35rem;
+    }
+
+    &-image {
+      width: 100%;
+    }
+
+    // STYLING RIGHT SIDE OF THE BOX
+    &-right {
+      max-width: 45rem;
+    }
+
+    &-heading {
+      font-size: 3.2rem;
+      max-width: 32rem;
+      margin-bottom: 2rem;
+      line-height: 150%;
+    }
+
+    &-para {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__button {
+    height: 50px;
+    width: 50px;
+    background-color: $color-green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
