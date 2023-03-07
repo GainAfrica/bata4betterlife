@@ -4,6 +4,7 @@ import LeftArrow from "../assets/icons/arrow-left.svg";
 import { useFormik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 const VolunteerForm = () => {
   const validate = (values) => {
@@ -51,21 +52,20 @@ const VolunteerForm = () => {
     },
     validate,
     onSubmit: (values, { resetForm }) => {
-      // alert(JSON.stringify(values, null, 2));
-      setTimeout(() => {
-        // toast.success(JSON.stringify(values, null, 2), {
-        //   position: "top-right",
-        //   autoClose: 5000,
-        //   hideProgressBar: true,
-        //   closeOnClick: true,
-        //   pauseOnHover: true,
-        //   draggable: true,
-        //   progress: undefined,
-        //   theme: "colored",
-        // });
-        toast.success("Form submitted successfully");
-        resetForm({ values: "" });
-      }, 500);
+      axios
+        .post(
+          "https://bata4betterlife-api-production.up.railway.app/api/v0/volunteer",
+          values
+        )
+        .then(function (response) {
+          if (response.status === 201) {
+            toast.success("Form submitted successfully");
+            resetForm({ values: "" });
+          }
+        })
+        .catch(function (error) {
+          toast.error("An error occurred");
+        });
     },
   });
 
@@ -197,7 +197,9 @@ const VolunteerForm = () => {
             ) : null}
           </div>
           <div>
-            <button className="general-form__form-btn">Submit form</button>
+            <button type="submit" className="general-form__form-btn">
+              Submit form
+            </button>
           </div>
 
           <ToastContainer
