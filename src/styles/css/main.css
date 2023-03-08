@@ -466,7 +466,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f6f9f8;
-  padding: 10rem 5rem;
+  padding: 10rem 4.5rem;
   margin-inline: auto;
   border-radius: 1.6rem 1.6rem 0 0;
   position: relative;
@@ -476,13 +476,15 @@ body {
   background-color: rgba(0, 0, 0, 0.1019607843);
   height: 2px;
   border: none;
+  width: 100%;
+  align-self: center;
 }
 .services__header {
-  display: flex;
-  justify-content: space-between;
-  max-width: 120rem;
+  display: grid;
   align-self: center;
   width: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 44rem 1fr;
 }
 .services__header h3 {
   font-size: 4.8rem;
@@ -494,8 +496,7 @@ body {
 }
 .services__box {
   display: flex;
-  justify-content: space-around;
-  max-width: 130rem;
+  justify-content: space-between;
   width: 100%;
   align-self: center;
   align-items: center;
@@ -538,7 +539,7 @@ body {
 }
 
 .volunteer {
-  background-color: #fff;
+  background-color: #f6f9f8;
   padding: 10rem 5rem;
   display: flex;
   justify-content: center;
@@ -589,25 +590,42 @@ body {
 .volunteer__btn {
   border: 1px solid #000;
   border-radius: 3rem;
-  padding: 1rem 3rem;
+  padding: 1rem;
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
 }
 .volunteer__btn span {
-  margin-right: 0.6rem;
+  margin-right: 1rem;
   color: #000;
   text-decoration: none;
+  transition: 1s ease;
+}
+.volunteer__btn:hover span {
+  transform: translateX(2.5rem);
 }
 .volunteer__btn img {
   margin-top: 1px;
-  transition: 0.3s ease;
 }
-.volunteer__btn:hover img {
-  transform: rotateZ(-30deg);
+.volunteer__btn:hover .volunteer__btn__arrow-2 {
+  transform: translateX(4rem);
+}
+.volunteer__btn:hover .volunteer__btn__arrow-1 {
+  transform: translateX(1rem);
+}
+.volunteer__btn__arrow-2 {
+  transition: 1s ease;
+  padding-right: 1rem;
+}
+.volunteer__btn__arrow-1 {
+  transform: translateX(-5rem);
+  transition: 1s ease;
 }
 
 .header {

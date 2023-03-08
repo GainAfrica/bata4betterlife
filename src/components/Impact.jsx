@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
-import VisibilitySensor from "react-visibility-sensor";
+// import VisibilitySensor from "react-visibility-sensor";
 
 function Impact() {
-  const [counterOn, setCounter] = useState(false);
+  // const [counterOn, setCounter] = useState(false);
 
   return (
     <section className="impact">
