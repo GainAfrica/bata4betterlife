@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         <div className="footer__address">
-          <span className="footer__rectangles-container">
+          <span className="footer__icons-container">
             <Link
               to={"/"}
               href="https://www.linkedin.com/in/moyinoluwa-adelowo-675565239/"
@@ -42,10 +42,12 @@ const Footer = () => {
               <FontAwesomeIcon icon={faTwitter} className="footer__icons" />
             </Link>
           </span>
-          <p className="footer__address-details">
-            1, New Airport Area, Oshodi, Nigeria
-          </p>
-          <p className="footer__address-details">info@better4life.com</p>
+          <div className="footer__address-container">
+            <p className="footer__address-details">
+              1, New Airport Area, Oshodi, Nigeria
+            </p>
+            <p className="footer__address-details">info@better4life.com</p>
+          </div>
         </div>
       </div>
       {/* END OF LEFT SIDE OF FOOTER */}

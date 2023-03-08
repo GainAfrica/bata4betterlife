@@ -79,8 +79,9 @@
   }
 
   &__button {
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
+    padding: 2rem;
     background-color: $color-green;
     border-radius: 50%;
     display: flex;
