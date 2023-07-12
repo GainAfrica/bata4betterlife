@@ -11,7 +11,7 @@ function Impact() {
   const el = para.current;
   console.log(el);
   const numberArr = [1, 2, 3, 4, 2];
-  const decimalArr = [2.5, 3.5, 7.5, 4.5, 1.5];
+  const decimalArr = ["2.5", "₦3.5", 7.5, "₦4.5", "₦1.5"];
   const letterArr = ["A", "R", "Z", "M"];
 
   const numberEls = numberArr.map((num, idx) => {
