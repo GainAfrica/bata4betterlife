@@ -29,7 +29,6 @@ function Impact() {
     const myScrollValues = {
       trigger: ".services__header",
       toggleActions: "restart none none none",
-      markers: true,
       start: "bottom 100%",
     };
 
