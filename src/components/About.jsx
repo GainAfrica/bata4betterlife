@@ -2,8 +2,31 @@ import React, { useState } from "react";
 import Beach from "../assets/images/about__beach.png";
 import KidGroup from "../assets/images/about__kids.png";
 import Draggable from "react-draggable";
+import { useRef } from "react";
 
 const About = () => {
+  const nextBtn = useRef(null);
+  const cursorContainer = useRef(null);
+
+
+  function moveCursor(e) {
+    nextBtn.current.style.top = e.clientY + "px";
+    nextBtn.current.style.left = e.clientX + "px";
+    nextBtn.current.classList.add('active')
+
+  }
+
+  function addCursor(){
+    nextBtn.current.classList.add('active')
+    nextBtn.current.style.top = e.clientY + "px";
+    nextBtn.current.style.left = e.clientX + "px";
+  }
+
+  function removeCursor() {
+    nextBtn.current.classList.remove('active')
+
+  }
+
   return (
     <div className="about">
       <div className="about__container--1">
@@ -28,15 +51,24 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about__container--2">
+      <div
+        className="about__container--2"
+        onMouseMove={moveCursor}
+        onMouseLeave={removeCursor}
+        onMouseEnter={addCursor}
+        ref={cursorContainer}
+      >
         <div className="about__container--2__left">
           <div className="about__container--2__left__beach">
             <img src={Beach} alt="" />
             <p>visitation to the beach</p>
           </div>
-          <Draggable>
-            <div className="about__container--2__left__btn">Next</div>
-          </Draggable>
+          <div
+            className={`about__container--2__left__btn `}
+            ref={nextBtn}
+          >
+            Next
+          </div>
         </div>
         <div className="about__container--3__right">
           <div className="about__container--3__right__kidGroup">

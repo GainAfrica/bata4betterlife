@@ -204,7 +204,7 @@ body {
   padding: 10rem 5rem;
   position: relative;
   margin-top: -10px;
-  z-index: 3;
+  z-index: 10;
   border-radius: 1.6rem 1.6rem 0 0;
   background-color: #fff;
   color: #000;
@@ -213,6 +213,8 @@ body {
 .about__container--1 {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 20;
 }
 .about__container--1__left {
   max-width: 43rem;
@@ -224,6 +226,8 @@ body {
   padding: 10rem 0rem;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 10;
 }
 .about__container--2__left {
   position: relative;
@@ -243,8 +247,8 @@ body {
   height: 100%;
 }
 .about__container--2__left__btn {
-  position: absolute;
-  z-index: 1000;
+  position: fixed;
+  z-index: 15;
   border-radius: 50%;
   background-color: #244629;
   color: #fff;
@@ -253,9 +257,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: move;
-  left: 500px;
-  top: 500px;
+  transition: 0.3s ease-out;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.about__container--2__left__btn.active {
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
 }
 .about__container--2__right {
   display: flex;
@@ -425,6 +436,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-inline: auto;
+  position: relative;
+  z-index: 20;
 }
 .impact__container {
   width: 100%;
@@ -485,6 +498,8 @@ body {
   padding: 10rem 4.5rem;
   margin-inline: auto;
   border-radius: 1.6rem 1.6rem 0 0;
+  position: relative;
+  z-index: 20;
   position: relative;
 }
 .services hr {
@@ -564,7 +579,7 @@ body {
   margin-inline: auto;
   border-radius: 0 0 1.6rem 1.6rem;
   position: relative;
-  z-index: 2;
+  z-index: 20;
 }
 .volunteer__container {
   width: 100%;

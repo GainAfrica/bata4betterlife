@@ -6,10 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Impact() {
-  // const [counterOn, setCounter] = useState(false);
-  const para = useRef(null);
-  const el = para.current;
-  console.log(el);
   const numberArr = [1, 2, 3, 4, 2];
   const decimalArr = ["2.5", "₦3.5", 7.5, "₦4.5", "₦1.5"];
   const letterArr = ["A", "R", "Z", "M"];
@@ -23,13 +19,16 @@ function Impact() {
   const letterEls = letterArr.map((num, idx) => {
     return <li key={idx}>{num}</li>;
   });
+  const para = useRef(null);
 
   useEffect(() => {
+    const el = para.current;
+    console.log(el);
     const tl = gsap;
     const myScrollValues = {
-      trigger: ".services__header",
+      trigger: el,
       toggleActions: "restart none none none",
-      start: "bottom 100%",
+      start: "top 80%",
     };
 
     tl.from("#numberList1", {
@@ -87,7 +86,7 @@ function Impact() {
           Our impact for the last <br /> couple of years
         </p>
 
-        <div className="impact__stats" id="impact_stats">
+        <div className="impact__stats" id="impact_stats" ref={para}>
           <div className="impact__stats__numbers">
             <h2 id="number1" className="numberList">
               <ul id="numberList1">{numberEls}</ul>
