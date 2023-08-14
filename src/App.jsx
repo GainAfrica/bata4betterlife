@@ -4,7 +4,10 @@ import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
 import Volunteer from "./pages/Volunteer";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+
+
+
 
 function App() {
   const containerRef = useRef(null);
@@ -26,14 +29,19 @@ function App() {
     // >
 
     // </LocomotiveScrollProvider>
+
+
     <main>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/volunteer" element={<Volunteer />} />
-      </Routes>
-    </main>
+     
+     <Routes>
+       <Route path="/" element={<Home />} />
+       <Route path="/gallery" element={<Gallery />} />
+       <Route path="/contact" element={<Contact />} />
+       <Route path="/volunteer" element={<Volunteer />} />
+     </Routes>
+   </main>
+
+
   );
 }
 

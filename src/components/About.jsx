@@ -7,7 +7,7 @@ import { useRef } from "react";
 const About = () => {
   const nextBtn = useRef(null);
   const cursorContainer = useRef(null);
-
+  console.log(window.innerHeight, window.innerWidth)
 
   function moveCursor(e) {
     nextBtn.current.style.top = e.clientY + "px";
@@ -16,7 +16,7 @@ const About = () => {
 
   }
 
-  function addCursor(){
+  function addCursor(e){
     nextBtn.current.classList.add('active')
     nextBtn.current.style.top = e.clientY + "px";
     nextBtn.current.style.left = e.clientX + "px";
@@ -29,7 +29,7 @@ const About = () => {
 
   return (
     <div className="about">
-      <div className="about__container--1">
+      <div className="about__container about__container--1">
         <div className="about__container--1__left">
           <p className="about__paragraph--1">
             Bata 4 Better Life is a Nigerian non-profit organization
@@ -52,7 +52,7 @@ const About = () => {
       </div>
 
       <div
-        className="about__container--2"
+        className="about__container about__container--2"
         onMouseMove={moveCursor}
         onMouseLeave={removeCursor}
         onMouseEnter={addCursor}
@@ -63,15 +63,15 @@ const About = () => {
             <img src={Beach} alt="" />
             <p>visitation to the beach</p>
           </div>
-          <div
+          {/* <div
             className={`about__container--2__left__btn `}
             ref={nextBtn}
           >
             Next
-          </div>
+          </div> */}
         </div>
-        <div className="about__container--3__right">
-          <div className="about__container--3__right__kidGroup">
+        <div className="about__container--2__right">
+          <div className="about__container--2__right__kidGroup">
             <img src={KidGroup} alt="" />
             <p>visitation to the beach</p>
           </div>

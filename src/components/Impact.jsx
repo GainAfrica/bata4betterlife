@@ -87,26 +87,28 @@ function Impact() {
         </p>
 
         <div className="impact__stats" id="impact_stats" ref={para}>
-          <div className="impact__stats__numbers">
-            <h2 id="number1" className="numberList">
-              <ul id="numberList1">{numberEls}</ul>
-              <ul id="numberList2">{numberEls.slice(0, 3)}</ul>
-            </h2>
-            <p ref={para}>Lives touched over time</p>
-          </div>
-          <div className="impact__stats__numbers">
-            <h2 className="numberList">
-              <ul id="decimalList">{decimalEls}</ul>
-              <ul id="letterList">{letterEls}</ul>
-            </h2>
-            <p id="para1"> Donations received over time</p>
-          </div>
-          <div className="impact__stats__numbers">
-            <h2 id="number1" className="numberList">
-              <ul id="numberList3">{numberEls}</ul>
-              <ul id="numberList4">{numberEls.slice(0, 3)}</ul>
-            </h2>
-            <p>Lives touched over time</p>
+          <div>
+            <div className="impact__stats__numbers">
+              <h2 id="number1" className="numberList">
+                <ul id="numberList1">{numberEls}</ul>
+                <ul id="numberList2">{numberEls.slice(0, 3)}</ul>
+              </h2>
+              <p ref={para}>Lives touched over time</p>
+            </div>
+            <div className="impact__stats__numbers">
+              <h2 className="numberList">
+                <ul id="decimalList">{decimalEls}</ul>
+                <ul id="letterList">{letterEls}</ul>
+              </h2>
+              <p id="para1"> Donations received over time</p>
+            </div>
+            <div className="impact__stats__numbers">
+              <h2 id="number1" className="numberList">
+                <ul id="numberList3">{numberEls}</ul>
+                <ul id="numberList4">{numberEls.slice(0, 3)}</ul>
+              </h2>
+              <p>Lives touched over time</p>
+            </div>
           </div>
         </div>
       </div>

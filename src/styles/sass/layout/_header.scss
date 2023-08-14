@@ -56,3 +56,10 @@
     }
   }
 }
+
+
+@media screen and (max-width: 950px) {
+  .header{
+    display: none;
+  }
+}

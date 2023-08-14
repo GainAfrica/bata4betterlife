@@ -34,7 +34,7 @@ function Services() {
     <section className="services">
       <div className="services__header">
         <p>CAUSES</p>
-        <h3>We’re focused on the projects that make life better kids</h3>
+        <h3 className="heading-secondary">We’re focused on the projects that make life better kids</h3>
       </div>
       <hr />
 
