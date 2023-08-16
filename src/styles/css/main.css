@@ -244,8 +244,14 @@ body {
     padding-bottom: 0rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .about {
+    padding: 10rem 3rem;
+  }
+}
 .general-form__container {
   min-height: 100vh;
+  display: flex;
 }
 .general-form__box {
   padding: 4rem 5rem 5rem;
@@ -353,6 +359,37 @@ body {
   line-height: 2rem;
 }
 
+@media (max-width: 950px) {
+  .general-form__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .general-form__box {
+    position: relative;
+    height: auto;
+    gap: 50px;
+    width: 100%;
+    padding: 3rem 4rem 4rem;
+  }
+  .general-form__title {
+    font-size: 3.3rem;
+    line-height: 120%;
+  }
+  .general-form__form {
+    margin-left: initial;
+    width: 100%;
+    padding: 3rem 4rem 4rem;
+  }
+}
+@media (max-width: 450px) {
+  .general-form__box {
+    padding: 3rem 2rem 4rem;
+  }
+  .general-form__form {
+    padding: 3rem 2rem 4rem;
+  }
+}
 .hero {
   background: url(../../assets/images/hero.png);
   background-repeat: no-repeat;
@@ -621,6 +658,9 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
+  .services {
+    padding: 10rem 3rem;
+  }
   .services__box {
     grid-template-columns: 1fr;
     text-align: center;
@@ -729,6 +769,7 @@ body {
   }
   .volunteer__container {
     align-items: center;
+    height: 45rem;
   }
   .volunteer__box {
     height: 28rem;
@@ -736,6 +777,26 @@ body {
   }
   .volunteer__title {
     font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .volunteer__container {
+    padding: 5rem 2rem;
+  }
+  .volunteer__box {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .volunteer__para {
+    font-size: 1.3rem;
+  }
+  .volunteer__title {
+    font-size: 2rem;
+  }
+  .volunteer__btn {
+    font-size: 1.2rem;
   }
 }
 .header {
@@ -1002,4 +1063,22 @@ body {
 .footer__link--heart {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+  }
+  .footer__left {
+    gap: 20px;
+  }
+  .footer__left__top {
+    line-height: 120%;
+  }
+  .footer__right {
+    align-items: start;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

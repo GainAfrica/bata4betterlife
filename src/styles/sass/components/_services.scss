@@ -130,6 +130,7 @@
 
 @media screen and (max-width: 500px) {
   .services {
+    padding: 10rem 3rem;
     &__box {
       grid-template-columns: 1fr;
       text-align: center;

@@ -1,6 +1,7 @@
 .general-form {
   &__container {
     min-height: 100vh;
+    display: flex;
   }
 
   &__box {
@@ -121,6 +122,48 @@
       font-size: 1.2rem;
       font-weight: 500;
       line-height: 2rem;
+    }
+  }
+}
+
+// QUERIES
+@media (max-width: 950px) {
+  .general-form {
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__box {
+      position: relative;
+      height: auto;
+      gap: 50px;
+      width: 100%;
+      padding: 3rem 4rem 4rem;
+    }
+
+    &__title {
+      font-size: 3.3rem;
+      line-height: 120%;
+    }
+
+    &__form {
+      margin-left: initial;
+      width: 100%;
+      padding: 3rem 4rem 4rem;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .general-form {
+
+    &__box {
+      padding: 3rem 2rem 4rem;
+    }
+
+
+    &__form {
+      padding: 3rem 2rem 4rem;
     }
   }
 }

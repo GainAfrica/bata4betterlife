@@ -103,21 +103,49 @@
   }
 }
 
-
 @media screen and (max-width: 950px) {
-  .volunteer{
+  .volunteer {
     padding: 10rem 2rem;
 
-    &__container{
+    &__container {
       align-items: center;
+      height: 45rem;
     }
 
-    &__box{
+    &__box {
       height: 28rem;
       width: 30rem;
     }
     &__title {
       font-size: 2.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .volunteer {
+    &__container {
+      padding: 5rem 2rem;
+    }
+    &__box {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .volunteer {
+
+    &__para{
+      font-size: 1.3rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__btn{
+      font-size: 1.2rem;
     }
   }
 }
