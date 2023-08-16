@@ -23,7 +23,6 @@ function Impact() {
 
   useEffect(() => {
     const el = para.current;
-    console.log(el);
     const tl = gsap;
     const myScrollValues = {
       trigger: el,

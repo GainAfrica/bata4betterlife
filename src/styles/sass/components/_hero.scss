@@ -31,9 +31,21 @@
   }
 }
 
+
+
 @media screen and (max-width: 950px) {
   .hero {
     // padding: 5rem 0;
     min-height: 70vh;
+ 
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero {
+    &__container {
+      h1 {
+        width: 100%;
+      }
+    }
   }
 }

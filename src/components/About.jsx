@@ -63,12 +63,12 @@ const About = () => {
             <img src={Beach} alt="" />
             <p>visitation to the beach</p>
           </div>
-          {/* <div
+          <div
             className={`about__container--2__left__btn `}
             ref={nextBtn}
           >
             Next
-          </div> */}
+          </div>
         </div>
         <div className="about__container--2__right">
           <div className="about__container--2__right__kidGroup">
